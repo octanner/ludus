@@ -28,21 +28,6 @@ eval "$(rbenv init -)"
 ```
 1. Install an IDE (e.g. Atom, Rubymine, or Sublime).
 
-### Install with docker:
-If you don't want to corrupt your local development box or going through the pain of installing all of the tools required to run tests, you can use docker to run your tests in your development box. It will help you getup running setup fast.
-
-Go to ludus directory and follow the below steps to setup the docker to run tests inside docker:
-
-##### Step1:
-```bash
-$ docker build -f Dockerfile.local -t ludus_local_dev .
-```
-##### Step2:
-Run `$ docker images` to see the images build from the above command.
-
-##### Step3:
-Run `$ docker run -it -v /$(pwd):/ludus ludus_local_dev bash` - it will get you inside the docker with source code mounted and run the tests as you would or refer `Running Tests` section.
-
 ## Environments:
 The four environments are QA, dev, stage, & prod. Before running the test suite you will need to set any required local environment variables. First, make sure the setup shell script above created a `.local` file for each environment plus one for global. You should have:
 ```
