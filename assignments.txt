@@ -1,4 +1,4 @@
-There are two simple assignments that you will need to complete:
+There are a few simple assignments that you will need to complete: (Once complete please zip the project and email it to berry.north@octanner.com)
 
 1. fix the launch_google_spec so it will pass.  (/spec/google/test/launch_google_spec.rb)
 
