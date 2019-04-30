@@ -1,7 +1,20 @@
-There are two simple assignments that you will need to complete:
+There are a few simple assignments that you will need to complete: (Once complete please zip the project and email it to berry.north@octanner.com)
 
-1. Create a single script that will click each menu item on the O.C. Tanner site and validate that you land on the proper page.
+1. fix the launch_google_spec so it will pass.  (/spec/google/test/launch_google_spec.rb)
 
-2. Create a script that does a google search for Muramasa.  Finds the wikipedia result and clicks it. Then from the wikipedia page capture his birthdate into a variable and print Muramasa's birthday to the console.
+2. finish the script that does a google search for Muramasa.
+    a. Find the wikipedia result and click it.
+    b. On the wikipedia page capture his birthdate.
+    c. Print Muramasa's birthday to the console.
 
-*Make sure to complete these assignments in one branch and push that branch up to origin when completed. If not completed make sure to push the branch before the deadline given.
+3. fix the launch_octanner_spec to validate the page loaded. (/spec/octanner/test/launch_octanner_spec.rb)
+
+4. Write a new test that validates the copywrite in the footer is correct and links you to the legal page.
+
+(Bonus)
+
+5. Come up with your own test for the OCTanner home page.
+
+****** Do your best to complete these assignments and email the changes back to us. ******
+
+Note: The readme file will help you get the project up and running.
