@@ -1,4 +1,4 @@
-require: rubocop-rspec
+require: rubocop-performance
 
 inherit_from: .oct_rubocop.yml
 
@@ -6,9 +6,6 @@ AllCops:
   Exclude:
     - 'bin/**/*'
     - 'vendor/**/*'
-
-Capybara/FeatureMethods:
-  Enabled: false
 
 Metrics/AbcSize:
   Enabled: false
@@ -27,12 +24,6 @@ Metrics/MethodLength:
   Exclude:
     - 'spec/simply/web/helper/setup.rb'
     - 'Rakefile'
-
-RSpec/ExampleLength:
-  Enabled: false
-
-RSpec/MultipleExpectations:
-  Enabled: false
 
 Style/FrozenStringLiteralComment:
   Enabled: false
