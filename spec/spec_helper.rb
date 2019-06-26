@@ -15,12 +15,8 @@ require 'selenium-webdriver'
 require 'pry'
 require 'pry-byebug'
 require 'faker'
-require 'google/web/utilities'
-require 'google/web/google'
-require 'octanner/web/utilities'
-require 'octanner/web/octanner'
-require_rel '/google/web/helper/'
-require_rel '/octanner/web/helper/'
+require_all 'spec/*/helpers/**/*.rb'
+
 Dir[File.dirname(__FILE__) + '/support/**/*.rb'].each { |f| require f }
 
 usesauce = ENV.fetch('USESAUCE', false)
@@ -36,14 +32,13 @@ Capybara.configure do |config|
 end
 
 RSpec.configure do |config|
-  config.before do |scenario|
+  config.before do
     puts 'Using Selenium'
-      browser = ENV.fetch('BROWSER', :chrome).downcase.to_sym
-      Capybara.register_driver :selenium do |app|
-        Capybara::Selenium::Driver.new(app, browser: browser)
-      end
-      @driver = Capybara.current_session.driver
+    browser = ENV.fetch('BROWSER', :chrome).downcase.to_sym
+    Capybara.register_driver :selenium do |app|
+      Capybara::Selenium::Driver.new(app, browser: browser)
     end
+    @driver = Capybara.current_session.driver
   end
 
   config.include Capybara::DSL

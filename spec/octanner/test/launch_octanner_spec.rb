@@ -3,7 +3,7 @@ octanner = Octanner.new
 
 feature 'Launch OC Tanner Website', type: :acceptance, sauce: ENV['USESAUCE'] do
   before do
-    visit(octanner.utilities.url('octanner'))
+    visit(octanner.url('octanner'))
   end
 
   scenario 'open menu' do
