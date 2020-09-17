@@ -1,8 +1,15 @@
 AllCops:
   DisplayCopNames: true
+  NewCops: enable
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Enabled: false
 
 Style/Documentation:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 100
