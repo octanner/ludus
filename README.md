@@ -46,10 +46,15 @@ If these were not created, either create the files manually (they can be empty) 
 `ruby bin/create_local_environment_variable_files_script.rb`  
 In `global.local` you will need the following environment variables.
 ```
-SAUCE_USERNAME=
-SAUCE_ACCESS_KEY=
-APPLITOOLS_ACCESS_KEY=
+DEVELOPER=
+GUNTER_PASSWORD=
 MAILINATOR_TOKEN=
+OCT_VAULT_TOKENS_EVE_KEY=
+OCT_VAULT_TOKENS_MAILINATOR_API=
+OCT_VAULT_S3_GUNTER_ACCESS_KEY_ID=
+OCT_VAULT_S3_GUNTER_SECRET_ACCESS_KEY=
+SAUCE_ACCESS_KEY=
+SAUCE_USERNAME=
 ```
 By default all tests are run in QA. To run any tests in a different environment, prod for example, prepend `APP_ENV=prod ` to the command.
 
