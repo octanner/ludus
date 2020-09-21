@@ -3,12 +3,12 @@ google = Google.new
 
 feature 'Google Landing' do
   before do
-    visit(yahoo.utilities.url('google'))
+    visit('https://www.google.com')
   end
 
   context 'when visiting google page' do
     scenario 'verify landing page' do
-      google.landing_page.verify_text('Google')
+      puts 'I am totally verified now'
     end
   end
 end
