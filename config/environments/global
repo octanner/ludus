@@ -17,3 +17,4 @@ SAUCE_USERNAME=
 # Add any non-secret environment variables below.
 ####################################################################################################
 SAUCE_DATA_CENTER='US_WEST'
+DOCKER='false'
