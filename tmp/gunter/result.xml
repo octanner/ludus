@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="1" skipped="0" failures="1" errors="0" time="2.470297" timestamp="2020-09-22T14:27:56-06:00" hostname="i33745-IS8">
-<properties>
-<property name="seed" value="26581"/>
-</properties>
-<testcase classname="spec.apps.google.test.launch_google_spec" name="Google Landing when visiting google page verify landing page" file="./spec/apps/google/test/launch_google_spec.rb" time="2.468016"><failure message="RSpec::Core::MultipleExceptionError" type="RSpec::Core::MultipleExceptionError">
-</failure></testcase>
-</testsuite>
