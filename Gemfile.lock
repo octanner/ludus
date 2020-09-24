@@ -5,7 +5,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.1)
     aws-eventstream (1.1.0)
-    aws-partitions (1.371.0)
+    aws-partitions (1.374.0)
     aws-sdk-core (3.107.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
@@ -64,7 +64,7 @@ GEM
     netrc (0.11.0)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-    oct_gaia (2.1.1)
+    oct_gaia (2.1.2)
       aws-sdk-s3
       bundler
       capybara
@@ -103,7 +103,7 @@ GEM
       rack (>= 1.0, < 3)
     rainbow (3.0.0)
     rake (13.0.1)
-    regexp_parser (1.7.1)
+    regexp_parser (1.8.0)
     require_all (3.0.0)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
@@ -128,7 +128,7 @@ GEM
     rspec-support (3.9.3)
     rspec_junit_formatter (0.4.1)
       rspec-core (>= 2, < 4, != 2.12.0)
-    rubocop (0.91.0)
+    rubocop (0.91.1)
       parallel (~> 1.10)
       parser (>= 2.7.1.1)
       rainbow (>= 2.2.2, < 4.0)
@@ -137,10 +137,11 @@ GEM
       rubocop-ast (>= 0.4.0, < 1.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (0.4.1)
+    rubocop-ast (0.4.2)
       parser (>= 2.7.1.4)
-    rubocop-performance (1.8.0)
+    rubocop-performance (1.8.1)
       rubocop (>= 0.87.0)
+      rubocop-ast (>= 0.4.0)
     rubocop-rspec (1.43.2)
       rubocop (~> 0.87)
     ruby-progressbar (1.10.1)
@@ -181,4 +182,4 @@ DEPENDENCIES
   simple-secrets
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
