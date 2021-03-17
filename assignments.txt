@@ -1,13 +1,13 @@
 There are a few simple assignments that you will need to complete: (Once complete please zip the project and email it to berry.north@octanner.com)
 
-1. fix the launch_google_spec so it will pass.  (/spec/google/test/launch_google_spec.rb)
+1. fix the launch_google_spec so it will pass.  (spec/apps/google/test/launch_google_spec.rb)
 
 2. finish the script that does a google search for Muramasa.
     a. Find the wikipedia result and click it.
     b. On the wikipedia page capture his birthdate.
     c. Print Muramasa's birthday to the console.
 
-3. fix the launch_octanner_spec to validate the page loaded. (/spec/octanner/test/launch_octanner_spec.rb)
+3. fix the launch_octanner_spec to validate the page loaded. (spec/apps/octanner/test/launch_octanner_spec.rb)
 
 4. Write a new test that validates the copywrite in the footer is correct and links you to the legal page.
 
