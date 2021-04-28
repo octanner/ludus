@@ -4,3 +4,5 @@ tmp
 
 spec/support/assets/pdf_output
 !spec/support/assets/pdf_output/typography-101.pdf
+
+.idea/
