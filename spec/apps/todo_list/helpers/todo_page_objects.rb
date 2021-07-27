@@ -1,10 +1,8 @@
 class TodoList
-  include Capybara::DSL
-  include RSpec::Matchers
 
-  def get_started_button
+  def start_button
     {
-      selector: 'button[data-testid=start]',
+      selector: 'a[data-testid=start]',
       name: 'Lets Get Started! button'
     }
   end
@@ -16,4 +14,3 @@ class TodoList
     }
   end
 end
-  
