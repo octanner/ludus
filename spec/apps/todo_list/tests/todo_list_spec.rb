@@ -1,21 +1,21 @@
 require 'spec_helper'
 todo_list = TodoList.new
+actions = TodoActions.new
 
 feature 'Todo List' do
   before do
-    visit(ENV.fetch('TODO_URL'))
-    todo_list.get_started
+    # find a way to click on the get started button
   end
 
-  context 'when visiting the Todo List page' do
-    scenario 'then verify the app is loaded' do
-      todo.verify_text('Add Item')
+  context 'when deleting an item' do
+    scenario 'expect the item to be removed from the Todo list' do
+     # write some code here using the helper methods and page objects to complete this task
     end
   end
 
   context 'when adding an item to the Todo list' do
     scenario 'then verify item was successfully added' do
-      # todo.landing_page.verify_text('Google')
+      # create objects and helper methods to add an item, and verify the item was added
     end
   end
 end

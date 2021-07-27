@@ -1,0 +1,19 @@
+Junior - add 2 items throught the ui, then write test using existing page objects and helpers
+to delete the 2nd added item
+
+technical - create test that uses helpers and page objects to:
+click get started
+delete item
+validate that each operation completes as expected
+
+Mid - use page object as a guide, write test that will add an item and validate that it was added correctly
+
+technical part - create new helper and page objects and test that it adds item to list and validates it is added
+
+
+Sr
+Technical - explain what is important to test in app
+Use tool of choice (our framework or their own) to test items listed as most important
+-evaluate whether front end or back end should be tested, and how to test it etc.
+
+if they have api testing exp, graphql or REST testing
