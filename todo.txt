@@ -1,0 +1,17 @@
+Junior - Explain what is important to test in app
+
+Write test using existing page objects and helpers to add an item and validate the creation of 
+that item
+
+Mid - Explain what is important to test in app.
+
+Use page object/helpers as a guide, write test that will add an item and validate that it 
+was added correctly - followed by an edit or delete of item to make sure those actions work as 
+expected.
+
+Sr - Explain what is important to test in app
+
+Use tool of choice (our framework or their own) to test items listed as most important
+-evaluate whether front end or back end should be tested, and how to test it etc.
+
+if they have api testing exp, graphql or REST testing

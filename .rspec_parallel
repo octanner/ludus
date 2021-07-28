@@ -1,6 +1,7 @@
 --color
 --require spec_helper
 
+--format RSpec::Github::Formatter
 --format RspecJunitFormatter
 --out tmp/gunter/<%= ENV['TASK_ID'] %>/<%= 'result' + ENV['TEST_ENV_NUMBER'] %>.xml
 
