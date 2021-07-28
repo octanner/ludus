@@ -7,23 +7,22 @@
 # Rspec documentation can be found at:
 # https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/include-matcher
 
-
 require 'spec_helper'
 
 todo_list = TodoList.new
 actions = TodoActions.new
 
 feature 'Todo List' do
-  context 'when deleting an item' do
-    scenario 'expect the item to be removed from the Todo list' do
-      binding.pry
-      # write your code to complete and validate the actions in the scenario.
-    end
+  before do
+    binding.pry
+    # find a way to launch the app, find the 'get started' button and click it
   end
 
   context 'when adding an item to the Todo list' do
     scenario 'then verify item was successfully added' do
-      # create new page objects and helper methods to add an item, and verify the item was added
+      # create a test here by using page objects and helpers
     end
   end
+
+  # create your own context and scenario to test another CRUD action on a list item
 end

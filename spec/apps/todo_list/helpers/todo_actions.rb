@@ -6,11 +6,8 @@ class TodoActions
     visit('https://setcand-te-ext.alamoapp.octanner.io/')
   end
 
-  def find_row_with_text(text)
-    find('tr', text: text)
-  end
-
-  def validate_item_removed(item)
-    # build your own helper by using capybara or rspec assertions.
+  def assert_item_added(item)
+    # choose an assertion/validation method from rspec or capybara to validate that your item
+    # was added to the todo list and write that assertion code here
   end
 end
