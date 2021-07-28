@@ -15,7 +15,7 @@ actions = TodoActions.new
 feature 'Todo List' do
   before do
     binding.pry
-    # find a way to launch the app, find the 'get started' button and click it
+    # find a way to open the app, find the 'get started button, and click on it.
   end
 
   context 'when adding an item to the Todo list' do
