@@ -1,0 +1,26 @@
+Todo list GraphQL Documentation and playground
+    https://setcand-te-ext.alamoapp.octanner.io/graphiql
+
+Rest API
+
+GET endpoints:
+GET items:
+    https://setcand-te-ext.alamoapp.octanner.io/items
+        - returns json
+GET items/{id}:
+    https://setcand-te-ext.alamoapp.octanner.io/items/1
+        - returns info on the item identified by the id
+
+POST items
+    https://setcand-te-ext.alamoapp.octanner.io/items
+        - form data
+            item[note]: string, item[completed]: boolean, item[priority]: integer
+
+PUT, PATCH
+    https://setcand-te-ext.alamoapp.octanner.io/items/1
+        - form data
+            item[note]: string, item[completed]: boolean, or item[priority]: integer
+
+DELETE
+    https://setcand-te-ext.alamoapp.octanner.io/items/1
+        deletes item 1 from to-do list
