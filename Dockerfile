@@ -1,4 +1,4 @@
-FROM harbor.octanner.io/developer/rubychrome:2.7.2-97.0
+FROM harbor.octanner.io/developer/rubychrome:2.7.6-101.0
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends libkrb5-dev python python3-pip \
@@ -12,6 +12,9 @@ RUN bundle config --global frozen 1
 WORKDIR /gems
 ADD Gemfile Gemfile
 ADD Gemfile.lock Gemfile.lock
+ARG OCT_VAULT_OPS_GITHUB_BUILD_USER=${OCT_VAULT_OPS_GITHUB_BUILD_USER:-obertbot}
+ARG DEFAULT_BUNDLE_PKG_GITHUB=$OCT_VAULT_OPS_GITHUB_BUILD_USER:$OCT_VAULT_OPS_GITHUB_BUILD_TOKEN
+ARG BUNDLE_RUBYGEMS__PKG__GITHUB__COM=${BUNDLE_RUBYGEMS__PKG__GITHUB__COM:-$DEFAULT_BUNDLE_PKG_GITHUB}
 RUN NOKOGIRI_USE_SYSTEM_LIBRARIES=true bundle install
 
 ENV APP_DIR /app
