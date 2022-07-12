@@ -1,13 +1,11 @@
-class TodoActions
-  include Capybara::DSL
-  extend RSpec::Matchers
+require_relative 'todo_assertions'
 
-  def open_app
-    visit('https://setcand-te-ext.alamoapp.octanner.io/')
-  end
+module TodoList
+  class TodoActions < TodoAssertions
+    def open_app
+      visit('https://setcand-te-ext.alamoapp.octanner.io/')
+    end
 
-  def assert_item_added(item)
-    # choose an assertion/validation method from rspec or capybara to validate that your item
-    # was added to the todo list and write that assertion code here
+    # add any other actions you would like to perform on the page in this class
   end
 end
