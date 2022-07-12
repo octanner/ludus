@@ -1,4 +1,4 @@
-#Graphql API testing
+# Graphql API testing
 class ToDoAPI
   include ::RSpec::Matchers
 
