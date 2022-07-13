@@ -12,7 +12,6 @@ todo_api = ToDoAPI
 feature 'To do list api' do
   context 'when sending a valid request' do
     scenario 'verify 200 response with correct values' do
-
     end
   end
 end
