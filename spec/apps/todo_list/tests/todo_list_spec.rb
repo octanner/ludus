@@ -19,6 +19,7 @@ feature 'Todo List' do
   context 'when adding an item to the Todo list' do
     scenario 'then verify item was successfully added' do
       # create a test here by using page objects and helpers
+      binding.pry
     end
   end
 
