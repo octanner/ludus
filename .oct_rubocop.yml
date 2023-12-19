@@ -18,4 +18,4 @@ Style/Documentation:
   Enabled: false
 
 Layout/LineLength:
-  Max: 140
+  Max: 150

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 source 'https://rubygems.pkg.github.com/octanner' do
-  gem 'gaia', '~> 7.0.4'
+  gem 'gaia', '8.1.0'
 end
 
 gem 'capybara'

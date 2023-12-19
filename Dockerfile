@@ -1,4 +1,4 @@
-FROM harbor.octanner.io/developer/rubychrome:2.7.6-101.0
+FROM harbor.octanner.io/base/rubychrome:3.1-112.0-1.5
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends libkrb5-dev python python3-pip \
