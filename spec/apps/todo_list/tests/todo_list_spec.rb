@@ -14,12 +14,12 @@ todo_list = TodoList::TodoActions.new
 feature 'Todo List' do
   before do
     # find a way to open the app, find the Get Started button, and click on it.
+    binding.pry
   end
 
   context 'when adding an item to the Todo list' do
     scenario 'then verify item was successfully added' do
       # create a test here by using page objects and helpers
-      binding.pry
     end
   end
 
