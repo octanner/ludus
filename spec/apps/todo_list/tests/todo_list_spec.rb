@@ -13,7 +13,6 @@ todo_list = TodoList::TodoActions.new
 
 feature 'Todo List' do
   before do
-    binding.pry
     # find a way to open the app, find the Get Started button, and click on it.
   end
 
